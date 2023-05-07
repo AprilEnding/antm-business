@@ -47,13 +47,16 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
-    staticDirectory: 'static',
+    esnextModules: ["@antmjs"],
     postcss: {
       autoprefixer: {
         enable: true,
         config: {
         }
+      },
+      pxtransform: {
+        enable: true,
+        config: {},
       },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true

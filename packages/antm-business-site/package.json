@@ -1,6 +1,6 @@
 {
   "name": "@antm-business/site",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "基于taro及vantui的业务小程序组件库文档",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
