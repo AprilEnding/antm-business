@@ -1,0 +1,16 @@
+node_modules/
+
+packages/antm-business-site/dist
+packages/antm-business-site/.dumi/tmp
+packages/antm-business-site/.dumi/tmp-test
+packages/antm-business-site/.dumi/tmp-production
+packages/antm-business-site/.DS_Store
+
+
+packages/antm-business-demo/dist/
+packages/antm-business-demo/deploy_versions/
+packages/antm-business-demo/.temp/
+packages/antm-business-demo/.rn_temp/
+packages/antm-business-demo/node_modules/
+packages/antm-business-demo/.DS_Store
+packages/antm-business-demo/.swc/
