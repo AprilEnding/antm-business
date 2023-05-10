@@ -1,27 +1,46 @@
 import { View } from '@tarojs/components'
-import React, { useState } from 'react'
+import { useCallback } from 'react'
 import { Tag } from '@antmjs/vantui'
+import type { TagProps } from '@antmjs/vantui/types/tag'
+import './index.less'
+
+export type ListItem = { key: string, label: string, value: string, tagProps?: TagProps }
+export type List = ListItem[]
+
+export interface TagListProps {
+  list: List
+  onClosed: (key: string, value: ListItem) => void
+}
 
 const clsPrefix = 'antm-tag-list'
 
-export interface TagListProps {
-
-}
-
 export function TagList(props: TagListProps) {
 
-  const { } = props
+  const { list, onClosed } = props
+
+  const handleTagClosed = useCallback((key, value) => {
+    if (typeof onClosed === 'function') {
+      onClosed(key, value)
+    }
+  }, [onClosed])
 
   return (
     <View className={clsPrefix}>
-      <Tag
-        type="primary"
-        size="medium"
-        closeable
-        onClose={() => {}}
-      >
-        标签
-      </Tag>
+      {!!list?.length && list.map(item => {
+        const {tagProps, key, label, value} = item
+        return (
+          <Tag
+            type="primary"
+            size="medium"
+            closeable
+            {...tagProps}
+            key={key}
+            onClose={() => handleTagClosed(key, value)}
+          >
+            <View className="van-ellipsis">{label}</View>
+          </Tag>
+        )
+      })}
     </View>
   )
 }
