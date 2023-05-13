@@ -1,7 +1,7 @@
 import React from 'react'
 import { Skeleton } from '@antmjs/vantui'
 import { View } from '@tarojs/components'
-import './index.less'
+// import './index.less'
 
 export interface HomeSkeletonProps {
   loading: boolean

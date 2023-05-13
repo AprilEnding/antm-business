@@ -14,3 +14,6 @@ packages/antm-business-demo/.rn_temp/
 packages/antm-business-demo/node_modules/
 packages/antm-business-demo/.DS_Store
 packages/antm-business-demo/.swc/
+
+packages/antm-business-ui/dist
+packages/antm-business-ui/lib

@@ -2,7 +2,7 @@ import { View } from '@tarojs/components'
 import { useCallback } from 'react'
 import { Tag } from '@antmjs/vantui'
 import type { TagProps } from '@antmjs/vantui/types/tag'
-import './index.less'
+// import './index.less'
 
 export type ListItem = { key: string, label: string, value: string, tagProps?: TagProps }
 export type List = ListItem[]
