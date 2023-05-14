@@ -1,20 +1,25 @@
-import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
+import less from 'rollup-plugin-less'
 
 export default {
-  input: 'src/index.ts',
+  input: {
+    index: 'src/index.ts',
+    'packages/home-skeleton': 'src/packages/home-skeleton/index.tsx',
+    // 'packages/home-skeleton/': 'src/packages/home-skeleton/index.less.ts',
+    'packages/tag-list': 'src/packages/tag-list/index.tsx',
+  },
   output: [
     {
-      // file: 'lib/bundle.js',
       format: 'es',
       dir: './dist/esm',
-    },
-    // {
-    //   file: 'lib/bundle.min.js',
-      
-    //   format: 'iife',
-    //   plugins: [terser()],
-    // },
+      // input entry 拼上entry ; entry-packages/tag-list ; entry-index
+      // entryFileNames: 'entry-[name].js',
+    }
   ],
-  plugins: [typescript()],
+  plugins: [
+    typescript(),
+    less({
+      output: true
+    }),
+  ],
 }

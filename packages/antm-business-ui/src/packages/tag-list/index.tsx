@@ -1,3 +1,4 @@
+import React from 'react'
 import { View } from '@tarojs/components'
 import { useCallback } from 'react'
 import { Tag } from '@antmjs/vantui'
@@ -18,7 +19,7 @@ export function TagList(props: TagListProps) {
 
   const { list, onClosed } = props
 
-  const handleTagClosed = useCallback((key, value) => {
+  const handleTagClosed = useCallback((key: string, value: ListItem) => {
     if (typeof onClosed === 'function') {
       onClosed(key, value)
     }
@@ -35,7 +36,7 @@ export function TagList(props: TagListProps) {
             closeable
             {...tagProps}
             key={key}
-            onClose={() => handleTagClosed(key, value)}
+            onClose={() => handleTagClosed(key, item)}
           >
             <View className="van-ellipsis">{label}</View>
           </Tag>
