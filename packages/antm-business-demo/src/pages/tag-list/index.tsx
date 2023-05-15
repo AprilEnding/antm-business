@@ -1,5 +1,5 @@
 import { View, Text } from '@tarojs/components'
-import { TagList, List } from '@antm-business/ui/src/tag-list'
+import { TagList } from '@antm-business/ui'
 import { useState } from 'react'
 import './index.less'
 
@@ -13,7 +13,7 @@ const initTagList = [
 
 export default function Index() {
 
-  const [tagList, setTagList] = useState(initTagList as List)
+  const [tagList, setTagList] = useState(initTagList as any)
 
   const onClosed = (key, value) => {
     setTagList(prev => prev.filter(item => item.key !== key))

@@ -1,25 +1,32 @@
 import typescript from '@rollup/plugin-typescript'
-import less from 'rollup-plugin-less'
+// import less from 'rollup-plugin-less'
+import postcss from 'rollup-plugin-postcss'
+import del from 'rollup-plugin-delete'
 
 export default {
+  /**
+   * todo 动态生成入口
+   */
   input: {
-    index: 'src/index.ts',
-    'packages/home-skeleton': 'src/packages/home-skeleton/index.tsx',
-    // 'packages/home-skeleton/': 'src/packages/home-skeleton/index.less.ts',
-    'packages/tag-list': 'src/packages/tag-list/index.tsx',
+    'index.es': 'src/index.ts',
+    'esm/packages/home-skeleton/index': 'src/packages/home-skeleton/index.tsx',
+    'esm/packages/tag-list/index': 'src/packages/tag-list/index.tsx',
+    'esm/packages/tag-list/components/wrapper/index': 'src/packages/tag-list/components/wrapper/index.tsx',
   },
   output: [
     {
       format: 'es',
-      dir: './dist/esm',
+      dir: './dist',
+      name: '[name].js',
       // input entry 拼上entry ; entry-packages/tag-list ; entry-index
-      // entryFileNames: 'entry-[name].js',
-    }
+      // entryFileNames: '[name].js',
+    },
   ],
   plugins: [
+    del({ targets: 'dist/*' }),
     typescript(),
-    less({
-      output: true
-    }),
+    postcss({
+      extract: true,
+    })
   ],
 }

@@ -6,7 +6,7 @@
     "types": ["node"],
     "allowJs": false,
     "declaration": true,
-    "declarationDir": "./dist/esm/types",
+    "declarationDir": "./dist/types",
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
