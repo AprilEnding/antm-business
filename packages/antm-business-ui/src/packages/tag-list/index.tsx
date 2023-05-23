@@ -3,7 +3,8 @@ import { View } from '@tarojs/components'
 import { useCallback } from 'react'
 import { Tag } from '@antmjs/vantui'
 import type { TagProps } from '@antmjs/vantui/types/tag'
-// import './index.less'
+import { Wrapper } from './components/wrapper'
+import './index.less'
 
 export type ListItem = { key: string, label: string, value: string, tagProps?: TagProps }
 export type List = ListItem[]
@@ -12,8 +13,6 @@ export interface TagListProps {
   list: List
   onClosed: (key: string, value: ListItem) => void
 }
-
-const clsPrefix = 'antm-tag-list'
 
 export function TagList(props: TagListProps) {
 
@@ -26,9 +25,9 @@ export function TagList(props: TagListProps) {
   }, [onClosed])
 
   return (
-    <View className={clsPrefix}>
+    <Wrapper>
       {!!list?.length && list.map(item => {
-        const {tagProps, key, label, value} = item
+        const { tagProps, key, label, value } = item
         return (
           <Tag
             type="primary"
@@ -42,7 +41,7 @@ export function TagList(props: TagListProps) {
           </Tag>
         )
       })}
-    </View>
+    </Wrapper>
   )
 }
 
