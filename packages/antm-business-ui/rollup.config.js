@@ -3,8 +3,7 @@ import copy from 'rollup-plugin-copy'
 import postcss from 'rollup-plugin-postcss'
 import del from 'rollup-plugin-delete'
 import path from 'path'
-
-const glob = require('glob')
+import glob from 'glob'
 
 const componentLessFile = glob.sync('src/packages/**/*.less')
 const componentTsFile = glob.sync('src/packages/**/*.tsx')
@@ -25,27 +24,24 @@ componentTsFile.forEach((item) => {
   entrys[outputPath] = item
 })
 
-console.log('entrys', entrys);
+/**
+ * todo
+ * types import @/packages 问题
+ */
 
 export default {
-  /**
-   * todo 动态生成入口
-   */
   input: entrys,
   output: [
     {
       format: 'es',
       dir: './dist',
-      // name: '[name].js',
-      // input entry 拼上entry ; entry-packages/tag-list ; entry-index
-      // entryFileNames: '[name].js',
     },
   ],
   plugins: [
     del({ targets: 'dist/*' }),
     typescript(),
     postcss({
-      extract: true,
+      extract: path.resolve('dist/index.css'),
     }),
     copy({
       targets: copyLessPathMap

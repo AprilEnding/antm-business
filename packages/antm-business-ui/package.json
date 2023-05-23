@@ -5,6 +5,7 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "typings": "dist/types/src/index.d.ts",
+  "style": "dist/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup --config --bundleConfigAsCjs && npm run build:umd",
