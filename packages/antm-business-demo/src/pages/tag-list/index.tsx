@@ -1,7 +1,7 @@
 import { View, Text } from '@tarojs/components'
 import { TagList } from '@antm-business/ui'
 import { useState } from 'react'
-import './index.less'
+// import './index.less'
 
 const initTagList = [
   {key: '1', label: 'tag1', value: '1'},

@@ -16,6 +16,15 @@ module.exports = {
         "style": (name) => `${name}/style/less`,
       },
       "@antmjs/vantui"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@antm-business/ui",
+        "libraryDirectory": "dist/esm/packages",
+        "style": (name) => `${name}/style`,
+      },
+      "@antm-business/ui"
     ]
   ]
 }

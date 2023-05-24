@@ -47,7 +47,7 @@ const config = {
     }
   },
   h5: {
-    esnextModules: ["@antmjs"],
+    esnextModules: ["@antmjs", "@antm-business"],
     postcss: {
       autoprefixer: {
         enable: true,
