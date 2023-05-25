@@ -12,6 +12,3 @@ let data = fs.readFileSync(typeIndexFile, {
 data = data.replace(/@\/packages/g, './packages')
 
 fse.outputFileSync(typeIndexFile, data)
-
-console.log('typeIndexFile', typeIndexFile)
-console.log('data', data)

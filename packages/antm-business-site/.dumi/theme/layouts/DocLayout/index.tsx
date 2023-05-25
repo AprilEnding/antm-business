@@ -16,7 +16,7 @@ import Header from 'dumi/theme/slots/Header';
 import Hero from 'dumi/theme/slots/Hero';
 import Sidebar from 'dumi/theme/slots/Sidebar';
 import Toc from 'dumi/theme/slots/Toc';
-import React, { useEffect, useState, type FC } from 'react';
+import React, { useEffect, useState, type FC, useMemo } from 'react';
 import MobileIframe from './mobile';
 import './index.less';
 
@@ -24,10 +24,17 @@ const DocLayout: FC = () => {
   const intl = useIntl();
   const outlet = useOutlet();
   const sidebar = useSidebarData();
-  const { hash } = useLocation();
+  const { hash, pathname } = useLocation();
   const { loading } = useSiteData();
   const [activateSidebar, updateActivateSidebar] = useState(false);
   const { frontmatter: fm } = useRouteMeta();
+
+  console.log('pathname', pathname);
+  
+  const isShowMobileIframe = useMemo(() => {
+    const siteBasePath = ["/components"]
+    return !!siteBasePath.find(item => pathname.includes(item))
+  }, [pathname])
 
   const showSidebar = fm.sidebar !== false && sidebar?.length > 0;
 
@@ -94,7 +101,7 @@ const DocLayout: FC = () => {
           {outlet}
           <Footer />
         </Content>
-        <MobileIframe></MobileIframe>
+        {isShowMobileIframe && (<MobileIframe />)}
         {fm.toc === 'content' && (
           <div className="dumi-default-doc-layout-toc-wrapper">
             <h4>TABLE OF CONTENTS</h4>

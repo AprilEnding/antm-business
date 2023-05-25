@@ -1,7 +1,29 @@
 import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import { Button } from '@antmjs/vantui'
+import { useLoad, navigateTo } from '@tarojs/taro'
+import { Icon } from '@antmjs/vantui'
+import pageConfig from './../../page.config.json'
 import './index.less'
+
+function CompListItem({
+  title,
+  link,
+}) {
+
+  const toLink = () => {
+    navigateTo({
+      url: link
+    })
+  }
+
+  return (
+    <View className='comp-list-item' onClick={toLink}>
+      <View>{title}</View>
+      <View>
+        <Icon name="arrow" color='#999' />
+      </View>
+    </View>
+  )
+}
 
 export default function Index() {
 
@@ -11,8 +33,18 @@ export default function Index() {
 
   return (
     <View className='index'>
-      <Button type="primary">====</Button>
-      <Button type="default">====</Button>
+      <View className='info'>
+        <View className='title'>@antm-business/ui</View>
+        <View className='content'>基于@antmjs/vantui开发的业务组件库</View>
+      </View>
+
+      <View className='comp-list'>
+        {
+          pageConfig.pages.map((item) => (
+            <CompListItem title={item.title} link={item.link} />
+          ))
+        }
+      </View>
     </View>
   )
 }

@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "title": "tag-list 标签组",
+      "link": "pages/tag-list/index"
+    },
+    {
+      "title": "home-skeleton 首页骨架屏",
+      "link": "pages/home-skeleton/index"
+    }
+  ],
+  "siteBasePath": ["/components"]
+}
