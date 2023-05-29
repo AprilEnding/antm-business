@@ -1,2 +1,3 @@
-This is a guide example.
-dfasdfsd
+---
+title: 指南
+---

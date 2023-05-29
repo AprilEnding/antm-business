@@ -15,7 +15,6 @@ const initTagList = [
 export default function Index() {
 
   const [tagList, setTagList] = useState(initTagList as any)
-
   const onClosed = (key, value) => {
     setTagList(prev => prev.filter(item => item.key !== key))
   }

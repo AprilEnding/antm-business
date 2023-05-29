@@ -1,4 +1,6 @@
-# Test
+---
+title: 组件2
+---
 
 This is an example component.
 

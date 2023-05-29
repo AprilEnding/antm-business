@@ -1,22 +1,10 @@
 ---
 hero:
-  title: library
-  description: test
+  title: antm-business
+  description: 基于taro以及vantui的业务小程序组件库
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
+    - text: 指南
+      link: /guide
+    - text: 组件
+      link: /components/foo
 ---
-
-test
