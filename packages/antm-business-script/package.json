@@ -1,0 +1,36 @@
+{
+  "name": "@antm-business/script",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/bin.js",
+  "bin": {
+    "antm-business-cli": "src/bin.js"
+  },
+  "description": "> TODO: description",
+  "author": "AprilEnding <april_ending@qq.com>",
+  "homepage": "https://github.com/AprilEnding/antm-business#readme",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AprilEnding/antm-business.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/antm-business-script.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/AprilEnding/antm-business/issues"
+  },
+  "devDependencies": {
+    "commander": "^10.0.1"
+  }
+}

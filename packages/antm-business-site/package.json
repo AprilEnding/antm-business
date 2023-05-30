@@ -15,7 +15,8 @@
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "prepublishOnly": "father doctor && npm run build",
+    "coyp:md": "npx antm-business-cli coyp"
   },
   "authors": [],
   "license": "MIT",
@@ -52,6 +53,7 @@
     "react-dom": ">=16.9.0"
   },
   "devDependencies": {
+    "@antm-business/script": "*",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/react": "^18.0.0",

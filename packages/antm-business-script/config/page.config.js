@@ -1,4 +1,4 @@
-{
+export default {
   "pages": [
     {
       "title": "HomeSkeleton 标签组",
