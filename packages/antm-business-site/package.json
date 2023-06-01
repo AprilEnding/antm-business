@@ -17,7 +17,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "coyp:md": "npx antm-business-cli coyp",
-    "copy:md": "node @antm-business/script/src/script/genrater-md.js"
+    "copy:md": "node ../antm-business-script/src/script/genrater-md.js"
   },
   "authors": [],
   "license": "MIT",

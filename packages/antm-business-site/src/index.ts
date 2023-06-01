@@ -1,2 +1,2 @@
-export { default as Foo } from './Foo';
-export { default as Test } from './Test';
+export { default as TagList } from './tag-list';
+export { default as HomeSkeleton } from './home-skeleton';

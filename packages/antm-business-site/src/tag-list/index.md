@@ -1,5 +1,5 @@
 ---
-title: tag-list 标签组
+title: 标签组
 ---
 
 # tag-list 标签组
