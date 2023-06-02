@@ -2,9 +2,9 @@
   "name": "@antm-business/script",
   "version": "0.0.0",
   "type": "module",
-  "main": "src/bin.js",
+  "main": "build/src/bin.js",
   "bin": {
-    "antm-business-cli": "src/bin.js"
+    "antm-business-cli": "bin.js"
   },
   "description": "> TODO: description",
   "author": "AprilEnding <april_ending@qq.com>",
@@ -25,12 +25,15 @@
     "url": "git+https://github.com/AprilEnding/antm-business.git"
   },
   "scripts": {
+    "watch": "rimraf build && npx tsc -p tsconfig.json --watch",
+    "build": "rimraf build && npx tsc -p tsconfig.json",
     "test": "node ./__tests__/antm-business-script.test.js"
   },
   "bugs": {
     "url": "https://github.com/AprilEnding/antm-business/issues"
   },
   "devDependencies": {
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "del": "^7.0.0"
   }
 }

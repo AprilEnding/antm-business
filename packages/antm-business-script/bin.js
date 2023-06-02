@@ -1,3 +1,2 @@
 #!/usr/bin/env node
-
-import './src/cli1.js'
+import './build/src/cli.js'
