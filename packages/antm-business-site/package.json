@@ -16,9 +16,9 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
-    "copy:md": "rimraf src && npx antm-business-cli coyp",
+    "copy:md": "rimraf src && npx antm-business-cli coyp:md",
     "build:demo": "cd ../antm-business-demo && npm run build:h5",
-    "copy:demo": "rimraf public && npx antm-business-cli copy:demo"
+    "copy:demo": "npx antm-business-cli copy:demo"
   },
   "authors": [],
   "license": "MIT",
