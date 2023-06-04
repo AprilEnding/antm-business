@@ -5,7 +5,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run copy:md && npm run build:demo && npm run copy:demo && npm run dev",
     "dev": "dumi dev",
     "build": "father build",
     "build:watch": "father dev",

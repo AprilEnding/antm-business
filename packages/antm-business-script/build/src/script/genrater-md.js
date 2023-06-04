@@ -14,7 +14,7 @@ export default function genraterMd() {
                 encoding: 'utf-8',
                 flag: 'r',
             });
-            mdContent = `---\ntitle: ${item.title}\n---\n\n${mdContent}`;
+            mdContent = `---\nnav: 组件\n---\n\n${mdContent}`;
             let mdImportIndex = `import React, { type FC } from 'react';\nconst ${item.componentName}: FC<{ title: string }> = (props) => <h4>{props.title}</h4>;\nexport default ${item.componentName};`;
             importMdIndexContent += `export { default as ${item.componentName} } from './${item.md.replace('/' + path.basename(item.md), '')}';\n`;
             fse.outputFileSync(siteMdFileIndexPath, mdContent);
