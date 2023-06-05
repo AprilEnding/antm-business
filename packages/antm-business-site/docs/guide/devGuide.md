@@ -13,7 +13,7 @@ order: 2
 package
   --antm-business-demo 基于taro的demo包
   --antm-business-script 一些打包脚本和demo/site使用的配置
-  --antm-business-site 文档网站
+  --antm-business-site 基于dumi的文档网站
   --antm-business-ui ui组件
 ```
 3. 组件使用rollup打包
@@ -84,3 +84,6 @@ antm-business-ui
     index.es.js
     index.umd.js
 ```
+
+## todo
+根据pageconfig 生成 app.config.ts
