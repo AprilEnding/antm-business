@@ -1,7 +1,7 @@
 import { View, Text } from '@tarojs/components'
 import { useLoad, navigateTo } from '@tarojs/taro'
 import { Icon } from '@antmjs/vantui'
-import pageConfig from './../../page.config.json'
+import pageConfig from '@antm-business/script/build/config/page.config'
 import './index.less'
 
 function CompListItem({

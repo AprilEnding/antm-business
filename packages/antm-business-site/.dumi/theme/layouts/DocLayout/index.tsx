@@ -28,8 +28,6 @@ const DocLayout: FC = () => {
   const { loading } = useSiteData();
   const [activateSidebar, updateActivateSidebar] = useState(false);
   const { frontmatter: fm } = useRouteMeta();
-
-  console.log('pathname', pathname);
   
   const isShowMobileIframe = useMemo(() => {
     const siteBasePath = ["/components"]

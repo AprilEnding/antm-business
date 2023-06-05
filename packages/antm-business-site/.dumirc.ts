@@ -5,5 +5,6 @@ export default defineConfig({
   themeConfig: {
     name: 'antm-business',
     logo: false,
+    footer: '@antm-business'
   },
 });
