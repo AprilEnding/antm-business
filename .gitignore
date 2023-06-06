@@ -17,3 +17,5 @@ packages/antm-business-demo/.swc/
 
 packages/antm-business-ui/dist
 packages/antm-business-ui/lib
+
+packages/antm-business-script/build

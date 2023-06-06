@@ -1,7 +1,7 @@
 import { View, Text } from '@tarojs/components'
 import { useLoad, navigateTo } from '@tarojs/taro'
 import { Icon } from '@antmjs/vantui'
-import pageConfig from '@antm-business/script/build/config/page.config'
+import pageConfig from '@antm-business/script/build/config/page.config.js'
 import './index.less'
 
 function CompListItem({
@@ -40,7 +40,7 @@ export default function Index() {
 
       <View className='comp-list'>
         {
-          pageConfig.pages.map((item) => (
+          pageConfig.pages.filter(item => item.isComponent).map((item) => (
             <CompListItem title={item.title} link={item.link} />
           ))
         }

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { getCurrentInstance } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import ComponentPageNav from '../ComponentPageNav'
-import pageConfig from '../../page.config.json'
+import pageConfig from '@antm-business/script/build/config/page.config'
 import './index.less'
 
 

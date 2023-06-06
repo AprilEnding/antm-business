@@ -1,24 +1,31 @@
 import fs from 'fs'
 import path from 'path'
+import consola from 'consola'
 
 export default function copyDemo() {
-  const demoBaseFile = path.resolve(process.cwd(), '../antm-business-demo/dist')
-  const sitePublicFile = path.resolve(process.cwd(), 'public')
-  const replaceTargetFile = (_, targetPath) => {
-    if (targetPath === path.resolve(sitePublicFile, 'index.html')) {
-      return path.resolve(sitePublicFile, 'h5.html')
-    } else {
-      return targetPath
+  try {
+    const demoBaseFile = path.resolve(process.cwd(), '../antm-business-demo/dist')
+    const sitePublicFile = path.resolve(process.cwd(), 'public')
+    const replaceTargetFile = (_: string, targetPath: string) => {
+      if (targetPath === path.resolve(sitePublicFile, 'index.html')) {
+        return path.resolve(sitePublicFile, 'h5.html')
+      } else {
+        return targetPath
+      }
     }
+    copy(demoBaseFile, sitePublicFile, { replaceTargetFile: replaceTargetFile })
+  } catch (error) {
+    consola.error('copy Demo error')
+    process.exit(1)
   }
-  copy(demoBaseFile, sitePublicFile, {replaceTargetFile: replaceTargetFile})
+
 }
 
 function copy(
-  source: string, 
-  target: string, 
-  option?: { 
-    replaceTargetFile: (sourcePath: string, targetPath: string) => string 
+  source: string,
+  target: string,
+  option?: {
+    replaceTargetFile: (sourcePath: string, targetPath: string) => string
   }
 ) {
   const result = fs.readdirSync(source, { withFileTypes: true })
@@ -31,7 +38,7 @@ function copy(
   if (result?.length) {
     result.forEach((dirObj) => {
       const sourcePath = path.resolve(source, dirObj.name)
-      const targetPath = typeof replaceTargetFile === 'function' 
+      const targetPath = typeof replaceTargetFile === 'function'
         ? replaceTargetFile(sourcePath, path.resolve(target, dirObj.name))
         : path.resolve(target, dirObj.name)
 

@@ -1,17 +1,24 @@
 import fs from 'fs';
 import path from 'path';
+import consola from 'consola';
 export default function copyDemo() {
-    const demoBaseFile = path.resolve(process.cwd(), '../antm-business-demo/dist');
-    const sitePublicFile = path.resolve(process.cwd(), 'public');
-    const replaceTargetFile = (_, targetPath) => {
-        if (targetPath === path.resolve(sitePublicFile, 'index.html')) {
-            return path.resolve(sitePublicFile, 'h5.html');
-        }
-        else {
-            return targetPath;
-        }
-    };
-    copy(demoBaseFile, sitePublicFile, { replaceTargetFile: replaceTargetFile });
+    try {
+        const demoBaseFile = path.resolve(process.cwd(), '../antm-business-demo/dist');
+        const sitePublicFile = path.resolve(process.cwd(), 'public');
+        const replaceTargetFile = (_, targetPath) => {
+            if (targetPath === path.resolve(sitePublicFile, 'index.html')) {
+                return path.resolve(sitePublicFile, 'h5.html');
+            }
+            else {
+                return targetPath;
+            }
+        };
+        copy(demoBaseFile, sitePublicFile, { replaceTargetFile: replaceTargetFile });
+    }
+    catch (error) {
+        consola.error('copy Demo error');
+        process.exit(1);
+    }
 }
 function copy(source, target, option) {
     const result = fs.readdirSync(source, { withFileTypes: true });
