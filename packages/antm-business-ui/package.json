@@ -9,8 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup --config --bundleConfigAsCjs && npm run build:umd && node scripts/generate-types.js && node scripts/generate-less.js",
-    "build:umd": "npx rollup src/index.ts -o dist/index.umd.js -f umd -n AntmBusinessUi",
-    "build:css": "npx rollup --config rollup.config.build.css.js --bundleConfigAsCjs"
+    "build:umd": "npx rollup --config rollup.config.umd.js --bundleConfigAsCjs",
+    "build:css": "npx rollup --config rollup.config.build.css.js --bundleConfigAsCjs",
+    "create:comp": "npx antm-business-cli create:component"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +27,7 @@
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-less": "^1.1.3",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "@antm-business/script": "*"
   }
 }

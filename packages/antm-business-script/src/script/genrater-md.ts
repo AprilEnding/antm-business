@@ -1,4 +1,4 @@
-import pageConfig from '../../config/page.config'
+import pageConfig from '../../config/page.config.js'
 import path from 'path'
 import fs from 'fs'
 import fse from 'fs-extra'

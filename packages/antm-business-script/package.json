@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "commander": "^10.0.1",
-    "del": "^7.0.0"
+    "del": "^7.0.0",
+    "prompts": "^2.4.2"
   }
 }

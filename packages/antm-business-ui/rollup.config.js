@@ -24,11 +24,6 @@ componentTsFile.forEach((item) => {
   entrys[outputPath] = item
 })
 
-/**
- * todo
- * types import @/packages 问题
- */
-
 export default {
   input: entrys,
   output: [
