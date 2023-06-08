@@ -2,11 +2,11 @@ import React from 'react'
 import { Button } from '@antmjs/vantui'
 import './index.less'
 
-export interface {{ ComponentName }}Props {
+export interface AcBvVProps {
   // ...
 }
 
-export function {{ ComponentName }}(props: {{ ComponentName }}Props) {
+export function AcBvV(props: AcBvVProps) {
 
   return (
     <>
@@ -15,4 +15,4 @@ export function {{ ComponentName }}(props: {{ ComponentName }}Props) {
   )
 }
 
-export default {{ ComponentName }}
+export default AcBvV
