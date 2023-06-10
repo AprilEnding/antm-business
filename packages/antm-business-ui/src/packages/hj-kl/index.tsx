@@ -2,17 +2,17 @@ import React from 'react'
 import { Button } from '@antmjs/vantui'
 import './index.less'
 
-export interface AcBvVProps {
+export interface HjKlProps {
   // ...
 }
 
-export function AcBvV(props: AcBvVProps) {
+export function HjKl(props: HjKlProps) {
 
   return (
     <>
-      <Button>new component</Button>
+      <Button>fff</Button>
     </>
   )
 }
 
-export default AcBvV
+export default HjKl

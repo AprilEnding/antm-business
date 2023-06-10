@@ -2,17 +2,17 @@ import React from 'react'
 import { Button } from '@antmjs/vantui'
 import './index.less'
 
-export interface BpVlVProps {
+export interface KllGhProps {
   // ...
 }
 
-export function BpVlV(props: BpVlVProps) {
+export function KllGh(props: KllGhProps) {
 
   return (
     <>
-      <Button>new component</Button>
+      <Button>ff</Button>
     </>
   )
 }
 
-export default BpVlV
+export default KllGh

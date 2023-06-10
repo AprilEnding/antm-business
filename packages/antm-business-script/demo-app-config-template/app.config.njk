@@ -1,12 +1,8 @@
 export default defineAppConfig({
   pages: [
-    "pages/index/index",
-    "pages/tag-list/index",
-    "pages/home-skeleton/index",
-    "pages/hhj/index",
-    "pages/kll-gh/index",
-    "pages/kl-hj/index",
-    "pages/hj-kl/index",
+    {%- for page in pages %}
+    "{{ page }}",
+    {%- endfor %}
   ],
   window: {
     backgroundTextStyle: 'light',

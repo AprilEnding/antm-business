@@ -10,7 +10,7 @@ export function {{ ComponentName }}(props: {{ ComponentName }}Props) {
 
   return (
     <>
-      <Button>new component</Button>
+      <Button>{{ ComponentCNName }}</Button>
     </>
   )
 }

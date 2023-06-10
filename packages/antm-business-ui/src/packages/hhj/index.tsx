@@ -2,17 +2,17 @@ import React from 'react'
 import { Button } from '@antmjs/vantui'
 import './index.less'
 
-export interface AcBvProps {
+export interface HhjProps {
   // ...
 }
 
-export function AcBv(props: AcBvProps) {
+export function Hhj(props: HhjProps) {
 
   return (
     <>
-      <Button>new component</Button>
+      <Button>gg</Button>
     </>
   )
 }
 
-export default AcBv
+export default Hhj
