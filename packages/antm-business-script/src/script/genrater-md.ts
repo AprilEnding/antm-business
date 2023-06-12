@@ -1,4 +1,4 @@
-import pageConfig from '../../config/page.config.js'
+import pageConfig from '@antm-business/ui/page.config.json' assert { type: "json" }
 import path from 'path'
 import fs from 'fs'
 import fse from 'fs-extra'

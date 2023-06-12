@@ -10,7 +10,8 @@
       "@@/*": [".dumi/tmp/*"],
       "test": ["src"],
       "test/*": ["src/*", "*"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
 }

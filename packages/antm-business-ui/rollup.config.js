@@ -19,6 +19,11 @@ const copyLessPathMap = componentLessFile.map((item) => {
   }
 })
 
+const copyPageConfig = {
+  src: 'page.config.json', 
+  dest: 'dist/'
+}
+
 componentTsFile.forEach((item) => {
   const outputPath = item.replace('src/packages/', 'esm/packages/').replace(path.extname(item), '')
   entrys[outputPath] = item
@@ -39,7 +44,10 @@ export default {
       extract: path.resolve('dist/index.css'),
     }),
     copy({
-      targets: copyLessPathMap
+      targets: [
+        ...copyLessPathMap,
+        copyPageConfig,
+      ]
     })
   ],
 }

@@ -39,6 +39,12 @@
     "componentName": "HjKl",
     "md": "hj-kl/README.md",
     "isComponent": true
+  }, {
+    "title": "ff",
+    "link": "pages/gh-g/index",
+    "componentName": "GhG",
+    "md": "gh-g/README.md",
+    "isComponent": true
   }],
   "siteBasePath": ["/components"]
 }

@@ -7,6 +7,7 @@ export default defineAppConfig({
     "pages/kll-gh/index",
     "pages/kl-hj/index",
     "pages/hj-kl/index",
+    "pages/gh-g/index",
   ],
   window: {
     backgroundTextStyle: 'light',

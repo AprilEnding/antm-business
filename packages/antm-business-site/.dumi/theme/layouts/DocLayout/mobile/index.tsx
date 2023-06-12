@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import './index.less'
 import { useLocation } from 'dumi'
-import pageConfig from '@antm-business/script/build/config/page.config.js'
+import pageConfig from '@antm-business/ui/page.config.json'
 
 export default function MobileIframe() {
 

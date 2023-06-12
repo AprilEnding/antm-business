@@ -11,20 +11,20 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // 这里的dirname是构建之后的目录
-const baseCompTemplatePath = path.resolve(__dirname, '../../../component-template')
-const baseCompUiPath = path.resolve(__dirname, '../../../../antm-business-ui')
+const baseCompTemplatePath = path.resolve(__dirname, '../../component-template')
+const baseCompUiPath = path.resolve(__dirname, '../../../antm-business-ui')
 const baseCompUiImportFilePath = path.join(baseCompUiPath, 'src/index.ts')
 const baseComUiPackagesPath = path.join(baseCompUiPath, 'src/packages')
 
-const demoTemplatePath = path.resolve(__dirname, '../../../demo-template')
-const demoPackagePath = path.resolve(__dirname, '../../../../antm-business-demo')
+const demoTemplatePath = path.resolve(__dirname, '../../demo-template')
+const demoPackagePath = path.resolve(__dirname, '../../../antm-business-demo')
 
 // page config path
 const pageConfigPath = path.join(baseCompUiPath, 'page.config.json')
 
 // demo path
-const baseDemoConfigPath = path.resolve(__dirname, '../../../../antm-business-demo/src/app.config.ts')
-const demoAppConfigTemplatePath = path.resolve(__dirname, '../../../demo-app-config-template/app.config.njk')
+const baseDemoConfigPath = path.resolve(__dirname, '../../../antm-business-demo/src/app.config.ts')
+const demoAppConfigTemplatePath = path.resolve(__dirname, '../../demo-app-config-template/app.config.njk')
 
 /**
  * 驼峰转横杠

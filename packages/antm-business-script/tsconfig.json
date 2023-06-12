@@ -26,7 +26,8 @@
     "allowJs": true,
     "jsx": "react-jsx",
     "baseUrl": "./",
-    "outDir": "build"
+    "outDir": "build",
+    "resolveJsonModule": true
   },
   "compileOnSave": false,
   "include": ["src"]
