@@ -15,36 +15,6 @@
     "componentName": "HomeSkeleton",
     "md": "home-skeleton/README.md",
     "isComponent": true
-  }, {
-    "title": "gg",
-    "link": "pages/hhj/index",
-    "componentName": "Hhj",
-    "md": "hhj/README.md",
-    "isComponent": true
-  }, {
-    "title": "ff",
-    "link": "pages/kll-gh/index",
-    "componentName": "KllGh",
-    "md": "kll-gh/README.md",
-    "isComponent": true
-  }, {
-    "title": "fff",
-    "link": "pages/kl-hj/index",
-    "componentName": "KlHj",
-    "md": "kl-hj/README.md",
-    "isComponent": true
-  }, {
-    "title": "fff",
-    "link": "pages/hj-kl/index",
-    "componentName": "HjKl",
-    "md": "hj-kl/README.md",
-    "isComponent": true
-  }, {
-    "title": "ff",
-    "link": "pages/gh-g/index",
-    "componentName": "GhG",
-    "md": "gh-g/README.md",
-    "isComponent": true
   }],
   "siteBasePath": ["/components"]
 }

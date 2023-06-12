@@ -11,7 +11,8 @@
     "build": "npx rollup --config --bundleConfigAsCjs && npm run build:umd && node scripts/generate-types.js && node scripts/generate-less.js",
     "build:umd": "npx rollup --config rollup.config.umd.js --bundleConfigAsCjs",
     "build:css": "npx rollup --config rollup.config.build.css.js --bundleConfigAsCjs",
-    "create:comp": "npx antm-business-cli create:component"
+    "create:comp": "npx antm-business-cli create:component",
+    "remove:comp": "npx antm-business-cli remove:component"
   },
   "author": "",
   "license": "ISC",
