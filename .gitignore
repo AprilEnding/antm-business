@@ -5,6 +5,10 @@ packages/antm-business-site/.dumi/tmp
 packages/antm-business-site/.dumi/tmp-test
 packages/antm-business-site/.dumi/tmp-production
 packages/antm-business-site/.DS_Store
+packages/antm-business-site/public/chunk
+packages/antm-business-site/public/css
+packages/antm-business-site/public/js
+packages/antm-business-site/public/h5.html
 
 
 packages/antm-business-demo/dist/
