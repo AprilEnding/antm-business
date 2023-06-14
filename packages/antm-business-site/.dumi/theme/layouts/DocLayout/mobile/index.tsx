@@ -8,8 +8,10 @@ export default function MobileIframe() {
   const location = useLocation()
 
   const iframePath = useMemo(() => {
-    const sitePathName = location?.pathname || ''
-    const matched = pageConfig?.pages?.find((item: any) => sitePathName.includes(item.sitePath))
+    const sitePathName = (location?.pathname || '')?.replace('/components/', '')
+    const matched = pageConfig?.pages?.find((item: any) => item?.link?.includes(sitePathName))
+    console.log('sitePathName', sitePathName)
+    console.log('pageConfig?.pages?', pageConfig?.pages)
     if (matched?.link) {
       return `/h5.html/#/${matched?.link}`
     } else {
