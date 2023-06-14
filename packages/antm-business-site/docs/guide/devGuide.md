@@ -84,8 +84,3 @@ antm-business-ui
     index.es.js
     index.umd.js
 ```
-
-## todo
-根据pageconfig 生成 app.config.ts ===> 
-ui umd 打包优化
-生成 ui组件模板、page config、
