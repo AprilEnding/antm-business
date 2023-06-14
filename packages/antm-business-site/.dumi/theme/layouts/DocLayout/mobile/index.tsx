@@ -13,9 +13,9 @@ export default function MobileIframe() {
     console.log('sitePathName', sitePathName)
     console.log('pageConfig?.pages?', pageConfig?.pages)
     if (matched?.link) {
-      return `/h5.html/#/${matched?.link}`
+      return `/h5.html#/${matched?.link}`
     } else {
-      return '/h5.html/#/pages/index/index'
+      return '/h5.html#/pages/index/index'
     }
   }, [location?.pathname])
 

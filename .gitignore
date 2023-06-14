@@ -1,6 +1,7 @@
 node_modules/
 
 packages/antm-business-site/dist
+packages/antm-business-site/docs-dist
 packages/antm-business-site/.dumi/tmp
 packages/antm-business-site/.dumi/tmp-test
 packages/antm-business-site/.dumi/tmp-production
