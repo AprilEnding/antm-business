@@ -20,6 +20,13 @@ package
 
 ## 新建组件
 
+### 执行新建组件命令
+
+```shell
+# cd antm-business-ui
+yarn create:comp
+```
+
 ### 目录结构
 ```text
 antm-business-ui
@@ -53,6 +60,17 @@ export function CompDemo(props: TagListProps) {
 export default CompDemo
 ```
 
+## 删除组件
+```shell
+# cd antm-business-ui
+yarn remove:comp ComponentName
+```
+## 新建/删除组件需要注意
+```text
+
+你不应该通过手动新建或者删除组件文件的形式去新建和删除组件，因为新建组件指令会额外处理其他配置，额删除指令会清楚这些配置。
+```
+
 ## 打包
 
 ### 执行打包命令
@@ -84,3 +102,38 @@ antm-business-ui
     index.es.js
     index.umd.js
 ```
+
+## 本地开发
+
+1. 构建 antm-business-ui
+
+```shell
+# cd antm-business-ui
+yarn build
+```
+
+2. 启动taro demo
+
+```shell
+# cd antm-business-ui
+# 小程序端未测试
+yarn dev:h5
+```
+
+3. 注意
+
+```text
+1. 修改组件之后需要重新执行yarn build（todo：监听文件内容，自动执行yarn build）。
+2. demo内的对应组件的页面会再使用指令新建组件时新建
+```
+
+## 本地开发文档
+
+```shell
+# cd antm-business-site 
+yarn start
+```
+
+注意：
+1. 组件markdown会从antm-business-ui对应的组件README.md同步
+2. 关于侧边的h5预览，页面来自与demo h5 的构建内容（执行yarn start 时 会执行 demo 的 build:h5）
