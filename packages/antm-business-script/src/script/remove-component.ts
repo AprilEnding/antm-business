@@ -2,18 +2,12 @@ import fse from 'fs-extra'
 import { formatCompName, updateUiImport, updateDemoAppConfig } from '../uilt/index.js'
 import path from 'path'
 import {
-  baseCompTemplatePath,
-  baseCompUiImportFilePath,
   baseComUiPackagesPath,
-  demoTemplatePath,
   demoPackagePath,
   pageConfigPath,
-  baseDemoConfigPath,
-  demoAppConfigTemplatePath,
 } from '../constant/index.js'
 import beautify from 'js-beautify'
 import consola from 'consola'
-import nunjucks from 'nunjucks'
 
 // 删除 ui 组件
 function rmUiComponent(compPath) {

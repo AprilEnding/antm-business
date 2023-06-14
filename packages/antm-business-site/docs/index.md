@@ -6,5 +6,5 @@ hero:
     - text: 指南
       link: /guide/use-guide
     - text: 组件
-      link: /components/foo
+      link: /components
 ---
