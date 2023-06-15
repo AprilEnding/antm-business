@@ -1,5 +1,7 @@
 # 使用指南
 
+[文档地址](https://aprilending.github.io/antm-business/)
+
 ## 介绍
 antm-business是一款基于taro和antmjs构建的业务组件库
 

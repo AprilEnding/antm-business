@@ -5,9 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "bps": "npx lerna publish --no-private"
+    "bps": "npx lerna publish --no-private",
+    "build:site": "cd packages/antm-business-site && npm run docs:build",
+    "deploy": "npm run build:site && gh-pages -d packages/antm-business-site/docs-dist -b gh-pages"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "lerna": "^6.6.2"
   }
 }

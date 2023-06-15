@@ -146,3 +146,12 @@ yarn start
 # cd antm-business
 yarn bps
 ```
+
+## 部署GitHub Pages
+
+### 手动部署
+
+```shell
+# cd antm-business
+yarn deploy
+```

@@ -48,6 +48,7 @@ const config = {
     }
   },
   h5: {
+    publicPath: '/antm-business',
     esnextModules: ["@antmjs", "@antm-business"],
     postcss: {
       autoprefixer: {
