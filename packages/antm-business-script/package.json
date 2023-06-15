@@ -6,9 +6,13 @@
   "bin": {
     "antm-business-cli": "bin.js"
   },
-  "description": "> TODO: description",
-  "author": "AprilEnding <april_ending@qq.com>",
-  "homepage": "https://github.com/AprilEnding/antm-business#readme",
+  "keywords": [
+    "antm-business",
+    "script"
+  ],
+  "description": "antm-business-ui 脚本",
+  "author": "AprilEnding",
+  "homepage": "https://github.com/AprilEnding/antm-business",
   "license": "MIT",
   "directories": {
     "lib": "lib",
@@ -18,11 +22,12 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AprilEnding/antm-business.git"
+    "url": "https://github.com/AprilEnding/antm-business"
   },
   "scripts": {
     "watch": "rimraf build && npx tsc -p tsconfig.json --watch",
