@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "bps": "npx lerna publish --no-private",
+    "pbs": "npx lerna publish --no-private",
     "build:site": "cd packages/antm-business-site && npm run docs:build",
     "deploy": "npm run build:site && gh-pages -d packages/antm-business-site/docs-dist -b gh-pages"
   },

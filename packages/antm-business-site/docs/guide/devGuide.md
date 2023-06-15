@@ -144,7 +144,7 @@ yarn start
 
 ```shell
 # cd antm-business
-yarn bps
+yarn pbs
 ```
 
 ## 部署GitHub Pages
