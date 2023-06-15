@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import consola from 'consola'
 
+
 export default function copyDemo() {
   try {
     const demoBaseFile = path.resolve(process.cwd(), '../antm-business-demo/dist')
@@ -15,7 +16,7 @@ export default function copyDemo() {
     }
     copy(demoBaseFile, sitePublicFile, { replaceTargetFile: replaceTargetFile })
   } catch (error) {
-    consola.error('copy Demo error')
+    consola.error('处理demo错误')
     process.exit(1)
   }
 

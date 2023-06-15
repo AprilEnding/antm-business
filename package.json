@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "bps": "npx lerna version --no-private"
+    "bps": "npx lerna publish --no-private"
   },
   "devDependencies": {
     "lerna": "^6.6.2"
