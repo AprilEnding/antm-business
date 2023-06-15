@@ -165,7 +165,7 @@ yarn add @antm-business/ui
   ]\r
 }\r
 
-`,paraId:8,tocIndex:3}],b={},S={title:"Docs",toc:"menu",filename:"docs/index.md",hero:{title:"antm-business",description:"\u57FA\u4E8Etaro\u4EE5\u53CAvantui\u7684\u4E1A\u52A1\u5C0F\u7A0B\u5E8F\u7EC4\u4EF6\u5E93",actions:[{text:"\u6307\u5357",link:"/guide/use-guide"},{text:"\u7EC4\u4EF6",link:"/components"}]}},x=[],A=[],R={},C={title:"\u9996\u9875\u9AA8\u67B6\u5C4F",toc:"menu",filename:"src/home-skeleton/index.md",atomId:"home-skeleton",nav:"\u7EC4\u4EF6",order:4},L=[{id:"\u9996\u9875\u9AA8\u67B6\u5C4F",depth:1,title:"\u9996\u9875\u9AA8\u67B6\u5C4F"},{id:"\u4F7F\u7528",depth:2,title:"\u4F7F\u7528"},{id:"\u5B9E\u4F8B",depth:2,title:"\u5B9E\u4F8B"}],D=[{value:`import { HomeSkeleton } from '@antm-business/ui'
+`,paraId:8,tocIndex:3}],b={},S={title:"Docs",toc:"menu",filename:"docs/index.md",hero:{title:"antm-business",description:"\u57FA\u4E8Etaro\u4EE5\u53CAvantui\u7684\u4E1A\u52A1\u5C0F\u7A0B\u5E8F\u7EC4\u4EF6\u5E93",actions:[{text:"\u6307\u5357",link:"/guide/use-guide"},{text:"\u7EC4\u4EF6",link:"/components/index"}]}},x=[],A=[],R={},C={title:"\u9996\u9875\u9AA8\u67B6\u5C4F",toc:"menu",filename:"src/home-skeleton/index.md",atomId:"home-skeleton",nav:"\u7EC4\u4EF6",order:4},L=[{id:"\u9996\u9875\u9AA8\u67B6\u5C4F",depth:1,title:"\u9996\u9875\u9AA8\u67B6\u5C4F"},{id:"\u4F7F\u7528",depth:2,title:"\u4F7F\u7528"},{id:"\u5B9E\u4F8B",depth:2,title:"\u5B9E\u4F8B"}],D=[{value:`import { HomeSkeleton } from '@antm-business/ui'
 `,paraId:0,tocIndex:1},{value:`import { HomeSkeleton } from '@antm-business/ui'\r
 import ComponentPageMain from '../../component/ComponentPageMain'\r
 import './index.less'\r
