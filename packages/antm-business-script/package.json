@@ -1,6 +1,6 @@
 {
   "name": "@antm-business/script",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "build/src/bin.js",
   "bin": {
@@ -38,7 +38,7 @@
     "url": "https://github.com/AprilEnding/antm-business/issues"
   },
   "devDependencies": {
-    "@antm-business/ui": "^0.0.1",
+    "@antm-business/ui": "^0.0.2",
     "commander": "^10.0.1",
     "del": "^7.0.0",
     "js-beautify": "^1.14.8",
