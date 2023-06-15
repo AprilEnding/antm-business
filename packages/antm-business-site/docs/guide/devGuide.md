@@ -137,3 +137,12 @@ yarn start
 注意：
 1. 组件markdown会从antm-business-ui对应的组件README.md同步
 2. 关于侧边的h5预览，页面来自与demo h5 的构建内容（执行yarn start 时 会执行 demo 的 build:h5）
+
+## 发布
+
+发包前提交本地修改
+
+```shell
+# cd antm-business
+yarn bps
+```
