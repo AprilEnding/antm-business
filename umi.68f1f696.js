@@ -102,7 +102,7 @@ yarn dev:h5
 `,paraId:16,tocIndex:10},{value:`# cd antm-business-site \r
 yarn start
 `,paraId:17,tocIndex:11},{value:"\u6CE8\u610F\uFF1A",paraId:18,tocIndex:11},{value:"\u7EC4\u4EF6markdown\u4F1A\u4ECEantm-business-ui\u5BF9\u5E94\u7684\u7EC4\u4EF6README.md\u540C\u6B65",paraId:19,tocIndex:11},{value:"\u5173\u4E8E\u4FA7\u8FB9\u7684h5\u9884\u89C8\uFF0C\u9875\u9762\u6765\u81EA\u4E0Edemo h5 \u7684\u6784\u5EFA\u5185\u5BB9\uFF08\u6267\u884Cyarn start \u65F6 \u4F1A\u6267\u884C demo \u7684 build:h5\uFF09",paraId:19,tocIndex:11},{value:"\u53D1\u5305\u524D\u63D0\u4EA4\u672C\u5730\u4FEE\u6539",paraId:20,tocIndex:12},{value:`# cd antm-business\r
-yarn bps
+yarn pbs
 `,paraId:21,tocIndex:12},{value:`# cd antm-business\r
 yarn deploy
 `,paraId:22,tocIndex:14}],m={},y={title:"\u4F7F\u7528\u6307\u5357",toc:"menu",filename:"docs/guide/useGuide.md",nav:"\u6307\u5357",order:1,description:"antm-business\u662F\u4E00\u6B3E\u57FA\u4E8Etaro\u548Cantmjs\u6784\u5EFA\u7684\u4E1A\u52A1\u7EC4\u4EF6\u5E93"},v=[{id:"\u4F7F\u7528\u6307\u5357",depth:1,title:"\u4F7F\u7528\u6307\u5357"},{id:"\u4ECB\u7ECD",depth:2,title:"\u4ECB\u7ECD"},{id:"\u4F7F\u7528antmjs\u548Cantm-business",depth:2,title:"\u4F7F\u7528antmjs\u548Cantm-business"},{id:"\u914D\u7F6E\u6309\u9700\u52A0\u8F7D",depth:2,title:"\u914D\u7F6E\u6309\u9700\u52A0\u8F7D"}],g=[{value:"antm-business\u662F\u4E00\u6B3E\u57FA\u4E8Etaro\u548Cantmjs\u6784\u5EFA\u7684\u4E1A\u52A1\u7EC4\u4EF6\u5E93",paraId:0,tocIndex:1},{value:"\u5B89\u88C5",paraId:1,tocIndex:2},{value:`# \u901A\u8FC7 npm \u5B89\u88C5\r
