@@ -44,7 +44,7 @@ export default function genraterMd() {
 
     fse.outputFileSync(path.resolve('../antm-business-site/src', 'index.ts'), importMdIndexContent)
   } catch (error) {
-    consola.error('genrater md file error')
+    consola.error('复制md文件到site错误')
     process.exit(1)
   }
 }

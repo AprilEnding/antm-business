@@ -44,5 +44,6 @@
     "js-beautify": "^1.14.8",
     "nunjucks": "^3.2.4",
     "prompts": "^2.4.2"
-  }
+  },
+  "gitHead": "c946607c7a57499cdcfc609ee96e518fd2f01b30"
 }
